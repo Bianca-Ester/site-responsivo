@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomia</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (min-width: 1024px ){
+
+            #grid{
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 150px;          
+            }
+
+            #intro{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            #text1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            p{
+                margin: 6px;
+            }
+
+            #img2{
+                position: relative;
+                border-radius: 10px;
+                left: 13%;
+            }
+
+            #text2{
+                position: absolute;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.507);
+                top: 240%;
+                left: 20%;
+                height: 235px;
+            }
+
+            #p{
+                width: 250px;
+            }
+        }
+
+        @media (orientation: portrait) {
+            
+            #grid{
+                max-width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 150px;
+            }
+
+            #intro{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            #img1{
+                position: relative;
+                height: 500px;
+                left: 5%;
+                margin-top: 140px;
+            }
+
+            #h2{
+                position: relative;
+                top: -185%;
+                margin: 0px;
+            }
+
+            .p{                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 550px;
+                margin-top: 35px;
+                margin-left: 29px;
+                margin-bottom: 45px;
+            }
+
+            #img2{
+                position: relative;
+                border-radius: 10px;
+                top: -20%;
+            }
+
+            #text2{
+                position: absolute;
+                border-radius: 5px;
+                background-color: rgba(0, 0, 0, 0.507);
+                top: 275%;
+                left: 25%;
+                height: 235px;
+            }
+
+            #p{
+                width: 250px;
+            }
+
+            footer{
+                margin-top: -80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <main>
+            <a href="index.html">INTRODUÇÃO</a>
+            <a href="news.html" target="_blank">NOTÍCIAS</a>
+            <a href="stars.html" target="_blank">ESTRELAS</a>
+        </main>
+        <h1>ASTRONOMIA</h1>
+    </div>
+    <div id="grid">
+        <div id="intro">
+            <img src="imagens/index/img1.jpg" alt="..." id="img1">
+            <div id="text1">
+                <h2 id="h2">O QUE É ASTRONOMIA?</h2>
+                <p class="p">Astronomia é o estudo das estrelas, planetas, cometas, asteroides, satélites, etc. Ela é uma ciência que estuda a órbita dos corpos celestes e os fenômenos que ocorrem nessas órbitas, tais como: luz, vento, tempestades, nebulosas, trovões, etc.</p>
+                <p class="p">Astronomia é um dos campos mais antigos da ciência, sendo a primeira área da ciência que estuda a vida e o universo. Astronomia é um dos mais importantes campos da ciência moderna, pois estuda a órbita dos corpos celestes e os fenômenos que ocorrem nessas órbitas, tais como: luz, vento, tempestades, nebulosas, trovões, etc.</p>
+            </div>
+        </div>
+        <div id="history">
+            <picture>
+                <source media="(max-width: 1024px)" srcset="imagens/index/img2p.jpg">
+                <img src="imagens/index/img2.jpg" alt="..." id="img2">
+            </picture>
+            <div id="text2">
+                <h2>HISTÓRIA</h2>
+                <h3>UMA DAS CIÊNCIAS MAIS ANTIGAS</h3>
+                <p id="p">Astronomia foi criada por <NAME> em 1601, em uma tentativa de explicar a origem do universo. Ele estava interessado em descobrir a origem da vida, e astronomia era a primeira ciência que tentava explicar a origem do universo.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer">By Bianca Ester, Guilherme Antônio, Maria Helen e Mikaelly Batista</p>
+    </footer>
+</body>
+</html>

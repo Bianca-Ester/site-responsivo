@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrelas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (min-width: 1024px ){
+            #text{
+                padding: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            h2{
+                font-size: 1.7em;
+            }
+            
+            #h2{
+                margin-top: 50px;
+                margin-bottom: 10px;
+                margin-left: 25%;
+            }
+
+            #p{
+                margin-top: 0px;
+                margin-bottom: 10px;
+                margin-left: 25%;
+            }
+
+            #princ{
+                position: relative;
+                left: 25%;
+            }  
+            
+            .container{
+                position: absolute;
+                width: 10%;
+                height: 10vh;
+            }
+
+            #container {
+                left: 30%;
+                top: 205%;
+            }
+
+            #container:hover #aries {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #aries {
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container2 {
+                left: 45%;
+                top: 200%;
+            }
+
+            #container2:hover #touro {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #touro{
+                position: absolute;
+                height: 100px;
+                visibility: hidden;
+            }
+
+            #container3 {
+                left: 63%;
+                top: 211%;
+            }
+
+            #container3:hover #gemeo {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #gemeo{
+                position: absolute;
+                height: 85px;
+                visibility: hidden;
+            }
+
+            #container4 {
+                left: 26%;
+                top: 232%;
+            }
+
+            #container4:hover #escorpiao {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #escorpiao{
+                position: absolute;
+                height: 85px;
+                visibility: hidden;
+            }
+
+            #container5 {
+                left: 40%;
+                top: 230%;
+            }
+
+            #container5:hover #peixe {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #peixe{
+                position: absolute;
+                height: 90px;
+                visibility: hidden;
+            }
+
+            #container6 {
+                left: 57%;
+                top: 231%;
+            }
+
+            #container6:hover #sagitario {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #sagitario{
+                position: absolute;
+                height: 100px;
+                visibility: hidden;
+            }
+
+            #container7 {
+                left: 69%;
+                top: 239%;
+            }
+
+            #container7:hover #cancer {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #cancer{
+                position: absolute;
+                height: 120px;
+                visibility: hidden;
+            }
+
+            #container8 {
+                left: 26%;
+                top: 261%;
+            }
+
+            #container8:hover #capricornio {
+                visibility: visible;
+                height: 200px;
+            }
+
+
+            #capricornio{
+                position: absolute;
+                height: 90px;
+                visibility: hidden;
+            }
+
+            #container9 {
+                left: 45%;
+                top: 259%;
+            }
+
+            #container9:hover #aquario {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #aquario{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container10 {
+                left: 31%;
+                top: 280%;
+            }
+
+            #container10:hover #libra {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #libra{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container11 {
+                left: 50%;
+                top: 280%;
+            }
+
+            #container11:hover #virgem {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #virgem{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container12 {
+                left: 62%;
+                top: 271%;
+            }
+
+            #container12:hover #leao {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #leao{
+                position: absolute;
+                height: 80px;                 visibility: hidden;
+            }
+
+        }
+
+        @media (orientation: portrait) {
+
+            #text{
+                margin-top: 180px;
+            }
+
+            h2{
+                font-size: 1.7em;
+            }
+
+            p{
+                margin-bottom: 25px;
+                width: 550px;
+            }
+
+            #h2{
+                margin-top: 140px;
+            }
+
+            .container{
+                position: absolute;
+                width: 10%;
+                height: 10vh;
+            }
+
+            #container {
+                left: 10%;
+                top: 190%;
+            }
+
+            #container:hover #aries {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #aries {
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container2 {
+                left: 40%;
+                top: 185%;
+            }
+
+            #container2:hover #touro {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #touro{
+                position: absolute;
+                height: 100px;
+                visibility: hidden;
+            }
+
+            #container3 {
+                left: 75%;
+                top: 195%;
+            }
+
+            #container3:hover #gemeo {
+                visibility: visible;
+                height: 200px;
+                transform: translateY(-50px);
+                transform: translateX(-215px);
+            }
+
+            #gemeo{
+                position: absolute;
+                height: 85px;
+                visibility: hidden;
+            }
+
+            #container4 {
+                left: 2%;
+                top: 214%;
+            }
+
+            #container4:hover #escorpiao {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #escorpiao{
+                position: absolute;
+                height: 85px;
+                visibility: hidden;
+            }
+
+            #container5 {
+                left: 28%;
+                top: 211%;
+            }
+
+            #container5:hover #peixe {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #peixe{
+                position: absolute;
+                height: 90px;
+                visibility: hidden;
+            }
+
+            #container6 {
+                left: 62%;
+                top: 212%;
+            }
+
+            #container6:hover #sagitario {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #sagitario{
+                position: absolute;
+                height: 100px;
+                visibility: hidden;
+            }
+
+            #container7 {
+                left: 85%;
+                top: 219%;
+            }
+
+            #container7:hover #cancer {
+                visibility: visible;
+                height: 200px;
+                transform: translateY(-50px);
+                transform: translateX(-70px);
+            }
+
+            #cancer{
+                position: absolute;
+                height: 120px;
+                visibility: hidden;
+            }
+
+            #container8 {
+                left: 2%;
+                top: 238%;
+            }
+
+            #container8:hover #capricornio {
+                visibility: visible;
+                height: 200px;
+            }
+
+
+            #capricornio{
+                position: absolute;
+                height: 90px;
+                visibility: hidden;
+            }
+
+            #container9 {
+                left: 38%;
+                top: 236%;
+            }
+
+            #container9:hover #aquario {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #aquario{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container10 {
+                left: 15%;
+                top: 255%;
+            }
+
+            #container10:hover #libra {
+                visibility: visible;
+                height: 200px;
+            }
+
+            #libra{
+                position: absolute;
+                height: 80px;
+                 visibility: hidden;
+            }
+
+            #container11 {
+                left: 52%;
+                top: 255%;
+            }
+
+            #container11:hover #virgem {
+                visibility: visible;
+                height: 200px;
+                transform: translateY(-50px);
+                transform: translateX(-190px);
+            }
+
+            #virgem{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+            #container12 {
+                left: 72%;
+                top: 248%;
+            }
+
+            #container12:hover #leao {
+                visibility: visible;
+                height: 200px;
+                transform: translateY(-50px);
+                transform: translateX(-190px);
+            }
+
+            #leao{
+                position: absolute;
+                height: 80px;
+                visibility: hidden;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <main>
+            <a href="index.html">INTRODUÇÃO</a>
+            <a href="news.html" target="_blank">NOTÍCIAS</a>
+            <a href="stars.html">ESTRELAS</a>
+        </main>
+        <h1>ESTRELAS</h1>
+    </div>
+    <div id="text">
+        <h2>O que são estrelas?</h2>
+        <p>As estrelas são corpos celestes luminosos compostos de hidrogênio e hélio, que brilham devido à fusão nuclear. Elas variam em tamanho, cor e brilho, nascendo em nebulosas e tendo diferentes ciclos de vida, desde anãs brancas até buracos negros.</p>
+        <p>Agrupadas no céu, formam constelações usadas desde a Antiguidade para navegação e mitologia. Exemplos famosos incluem Órion, Ursa Maior, Escorpião e Cruz do Sul. Além de sua importância científica, as estrelas continuam a fascinar a humanidade, ajudando a desvendar os mistérios do universo.</p>
+    </div>
+    <div id="div">
+        <h2 id="h2">Vamos ver algumas constelações</h2>
+        <p id="p">Passe o mouse por cima das constelações</p>
+        <picture>
+            <source media="(max-width: 1024px)" srcset="imagens/stars/constelacao2.webp">
+            <img src="imagens/stars/constelacao.webp" alt="..." id="princ">
+        </picture>
+        <div class="container" id="container">
+            <img src="imagens/stars/aries.jpg" alt="..." id="aries">
+        </div>
+        <div class="container" id="container2">
+            <img src="imagens/stars/touro.webp" alt="..." id="touro">
+        </div>
+        <div class="container" id="container3">
+            <img src="imagens/stars/gemeo.jpg" alt="..." id="gemeo">
+        </div>
+        <div class="container" id="container4">
+            <img src="imagens/stars/escorpiao.jpg" alt="..." id="escorpiao">
+        </div>
+        <div class="container" id="container5">
+            <img src="imagens/stars/peixe.jpg" alt="..." id="peixe">
+        </div>
+        <div class="container" id="container6">
+            <img src="imagens/stars/sagitario.jpg" alt="..." id="sagitario">
+        </div>
+        <div class="container" id="container7">
+            <img src="imagens/stars/cancer.jpg" alt="..." id="cancer">
+        </div>
+        <div class="container" id="container8">
+            <img src="imagens/stars/capricornio.jpg" alt="..." id="capricornio">
+        </div>
+        <div class="container" id="container9">
+            <img src="imagens/stars/aquario.jpg" alt="..." id="aquario">
+        </div>
+        <div class="container" id="container10">
+            <img src="imagens/stars/libra.jpg" alt="..." id="libra">
+        </div>
+        <div class="container" id="container11">
+            <img src="imagens/stars/virgem.jpg" alt="..." id="virgem">
+        </div>
+        <div class="container" id="container12">
+            <img src="imagens/stars/leao.jpg" alt="..." id="leao">
+        </div>
+    </div>
+    <footer>
+        <p class="footer">By Bianca Ester, Guilherme Antônio, Maria Helen e Mikaelly Batista</p>
+    </footer>
+</body>
+</html>

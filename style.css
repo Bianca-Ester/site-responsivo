@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body{
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 1024px ){
+
+    #header{
+        background-image: url("imagens/capa.jpg");
+        background-size: 100% 100%;
+        position: relative;
+        position: relativo;
+        height: 80vh;
+        margin-bottom: 100px;
+    }
+    
+    main{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 7px;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        font-size: 3.5em;
+    }
+     
+}
+
+@media (orientation: portrait) {
+
+    #header{
+        background-image: url("imagens/capa2.jpg");
+        background-size: 100% 100%;
+        position: relative;
+        position: relativo;
+        height: 80vh;
+        margin-bottom: 100px;
+    }
+    
+    main{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 7px;
+    }
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    h1{
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        font-size: 3.5em;
+    }
+     
+}
+
+footer{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
